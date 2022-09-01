@@ -47,9 +47,9 @@ unknownCommand cmd = do
   putStrLn usage
 
 usage :: String
-usage = "Usage: pod command [args]\n\
+usage = "Usage: PodCatcher command [args]\n\
   \\n\
-  \pod add url      Adds a new podcast with the given URL\n\
-  \pod download     Downloads all pending episodes\n\
-  \pod fetch        Updates then downloads\n\
-  \pod update       Downloads podcast feeds, looks for new episodes\n"
+  \PodCatcher add url      Adds a new podcast with the given URL\n\
+  \PodCatcher download     Downloads all pending episodes\n\
+  \PodCatcher fetch        Updates then downloads\n\
+  \PodCatcher update       Downloads podcast feeds, looks for new episodes\n"
