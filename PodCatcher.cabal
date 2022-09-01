@@ -49,5 +49,4 @@ executable PodCatcher
     , network
     , PodCatcher
 
-  hs-source-dirs:   src
   default-language: Haskell2010
