@@ -19,4 +19,5 @@ Once in the directory, it's a few simple `cabal` commands away.
 ```
 cabal configure
 cabal build
+cabal install
 ```
