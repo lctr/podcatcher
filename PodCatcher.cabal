@@ -38,11 +38,12 @@ library
 executable PodCatcher
   main-is:          Main.hs
 
-  -- other-modules:
   -- other-extensions:
   build-depends:
     , base        ^>=4.14.1.0
+    , HDBC
+    , network
     , PodCatcher
 
-  -- hs-source-dirs:
+  hs-source-dirs:   src
   default-language: Haskell2010
