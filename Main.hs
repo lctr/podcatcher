@@ -15,6 +15,7 @@ main = withSocketsDo $ handleSqlError $ do
     ["update"]   -> update dbh
     ["download"] -> download dbh
     ["fetch"]    -> update dbh >> download dbh
+    ["help"]     -> putStrLn usage
     [cmd]        -> unknownCommand cmd
     _            -> putStrLn usage
   disconnect dbh
