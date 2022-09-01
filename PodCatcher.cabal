@@ -6,17 +6,9 @@ cabal-version:      2.4
 
 name:               PodCatcher
 version:            0.1.0.0
-
--- synopsis:
--- description:
--- bug-reports:
--- license:
--- license-file:        LICENSE
+build-type:         Simple
 author:             Lictor Guzman
 maintainer:         lctrgzmn@gmail.com
-
--- copyright:
--- category:
 extra-source-files: CHANGELOG.md
 
 library
@@ -50,3 +42,4 @@ executable PodCatcher
     , PodCatcher
 
   default-language: Haskell2010
+  ghc-options:      -O2
