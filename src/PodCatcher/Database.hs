@@ -45,9 +45,9 @@ prepDB dbh = do
        \ep_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\
        \ep_cast_id INTEGER NOT NULL,\
        \ep_url TEXT NOT NULL,\
-       \ep_url TEXT NOT NULL,\
-       \UNIQUE(epcast_id, ep_url),\
-       \UNIQUE(epcast_id, ep_id)\
+       \ep_done INTEGER NOT NULL,\
+       \UNIQUE(ep_cast_id, ep_url),\
+       \UNIQUE(ep_cast_id, ep_id)\
       \)"
 
 -- | Adds a new podcast to the database. Ignores the 'cast_id' on the
